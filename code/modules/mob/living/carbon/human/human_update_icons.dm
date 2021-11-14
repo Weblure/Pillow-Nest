@@ -462,6 +462,7 @@ generate/load female uniform sprites matching all previously decided variables
 	var/static/list/slot_translation = SLOT_TRANSLATION_LIST
 	var/static/list/bodytype_translation = BODYTYPE_TRANSLATION_LIST
 
+	var/real_bodytype = wearer ? wearer.dna.species.bodytype : BODYTYPE_HUMANOID
 	var/bodytype = wearer ? wearer.dna.species.get_bodytype(slot, src) : BODYTYPE_HUMANOID
 	var/perc_bodytype = bodytype
 	var/wear_template = FALSE
@@ -533,10 +534,15 @@ generate/load female uniform sprites matching all previously decided variables
 		standing.color = color
 
 	///Species offsets, only applied when the bodytype is not fitted. (using human variants instead)
-	if(bodytype != perc_bodytype && wearer && wearer.dna.species.offset_features)
-		var/list/offset_list = wearer.dna.species.offset_features[translated_slot]
-		standing.pixel_x += offset_list[1]
-		standing.pixel_y += offset_list[2]
+	if(wearer && wearer.dna.species.offset_features)
+		if(isinhands && wearer.dna.species.offset_features[OFFSET_INHANDS])
+			var/list/offset_list = wearer.dna.species.offset_features[OFFSET_INHANDS]
+			standing.pixel_x += offset_list[1]
+			standing.pixel_y += offset_list[2]
+		else if(real_bodytype != perc_bodytype && wearer.dna.species.offset_features[translated_slot])
+			var/list/offset_list = wearer.dna.species.offset_features[translated_slot]
+			standing.pixel_x += offset_list[1]
+			standing.pixel_y += offset_list[2]
 
 	//Large worn offsets
 	if(perc_bodytype & BODYTYPE_TAUR_ALL)
