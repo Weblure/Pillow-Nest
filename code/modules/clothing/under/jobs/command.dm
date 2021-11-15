@@ -26,6 +26,7 @@
 	icon_state = "green_suit"
 	inhand_icon_state = "dg_suit"
 	can_adjust = FALSE
+	fitted_bodytypes = BODYTYPE_DIGITIGRADE
 
 /obj/item/clothing/under/rank/captain/suit/skirt
 	name = "green suitskirt"
@@ -43,3 +44,4 @@
 	icon_state = "captain_parade"
 	inhand_icon_state = "by_suit"
 	can_adjust = FALSE
+	fitted_bodytypes = BODYTYPE_DIGITIGRADE
