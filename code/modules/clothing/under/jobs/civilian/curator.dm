@@ -48,3 +48,4 @@
 	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
 	can_adjust = FALSE
 	resistance_flags = NONE
+	fitted_bodytypes = BODYTYPE_DIGITIGRADE|BODYTYPE_TESHARI

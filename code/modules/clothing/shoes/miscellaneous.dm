@@ -55,6 +55,7 @@
 	permeability_coefficient = 0.9
 	can_be_tied = FALSE
 	resistance_flags = FIRE_PROOF |  ACID_PROOF
+	fitted_bodytypes = BODYTYPE_DIGITIGRADE
 
 /obj/item/clothing/shoes/sandal/magic
 	name = "magical sandals"
