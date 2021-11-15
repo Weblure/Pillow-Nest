@@ -4,6 +4,7 @@
 	greyscale_colors = "#545454#ffffff"
 	greyscale_config = /datum/greyscale_config/sneakers
 	greyscale_config_worn = /datum/greyscale_config/sneakers_worn
+	fitted_bodytypes = BODYTYPE_DIGITIGRADE|BODYTYPE_TESHARI
 
 /obj/item/clothing/shoes/sneakers/black
 	name = "black shoes"

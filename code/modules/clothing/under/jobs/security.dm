@@ -212,6 +212,7 @@
 	has_sensor = LOCKED_SENSORS
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
+	fitted_bodytypes = BODYTYPE_DIGITIGRADE|BODYTYPE_TESHARI
 
 /obj/item/clothing/under/rank/prisoner/skirt
 	name = "prison jumpskirt"
@@ -225,7 +226,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	fitted = FEMALE_UNIFORM_TOP
-	fitted_bodytypes = NONE
+	fitted_bodytypes = BODYTYPE_TESHARI
 
 /obj/item/clothing/under/rank/security/officer/beatcop
 	name = "space police uniform"

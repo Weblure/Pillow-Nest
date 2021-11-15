@@ -1,5 +1,5 @@
 /datum/species/teshari //small voxes
-	name = "Teshari"
+	name = "Avali"
 	id = "teshari"
 	default_color = "6060FF"
 	eyes_icon = 'icons/mob/species/teshari_eyes.dmi'
@@ -35,17 +35,20 @@
 		OFFSET_BACK = list(0,-4), 
 		OFFSET_NECK = list(0,-4),
 		OFFSET_INHANDS = list(0,-2),
-		OFFSET_GLASSES = list(0,-5)
+		OFFSET_SUIT = list(0,-4), 
+		OFFSET_S_STORE = list(0,-2),
+		OFFSET_GLASSES = list(0,-5),
+		OFFSET_ID = list(0,-4)
 		)
-	coldmod = 0.67 // Except cold.
+	coldmod = 0.3 // Except cold.
 	heatmod = 1.5
 	brutemod = 1.5
 	burnmod = 1.5 // They take more damage from practically everything
 	punchdamagelow = 2 // Lower bound punch damage
 	punchdamagehigh = 6
-	bodytemp_normal = BODYTEMP_NORMAL - 30
-	bodytemp_heat_damage_limit = BODYTEMP_HEAT_DAMAGE_LIMIT - 30
-	bodytemp_cold_damage_limit = BODYTEMP_COLD_DAMAGE_LIMIT - 30
+	bodytemp_normal = BODYTEMP_NORMAL - 50
+	bodytemp_heat_damage_limit = BODYTEMP_HEAT_DAMAGE_LIMIT - 50
+	bodytemp_cold_damage_limit = BODYTEMP_COLD_DAMAGE_LIMIT - 50
 	species_language_holder = /datum/language_holder/teshari
 	learnable_languages = list(/datum/language/common, /datum/language/schechi)
 	body_size_restricted = TRUE
@@ -56,7 +59,10 @@
 	are only recently becoming known on human stations after reaching space with Skrell assistance."
 
 /datum/species/teshari/get_bodytype(item_slot = NONE, obj/item/checked_item_for)
-	///Treat as having a digitigrade head cause of a snout shape
+	///Always return a Teshari bodytype if the item accounts for it
+	if(checked_item_for && checked_item_for.fitted_bodytypes & bodytype)
+		return bodytype
+	///Treat as having a digitigrade head cause of a snout shape, if above check didn't go through
 	if((item_slot == ITEM_SLOT_HEAD || item_slot == ITEM_SLOT_MASK))
 		return BODYTYPE_DIGITIGRADE
 	return bodytype

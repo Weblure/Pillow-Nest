@@ -111,6 +111,9 @@
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/t_scanner, /obj/item/construction/rcd, /obj/item/pipe_dispenser)
 	siemens_coefficient = 0
 	fitted_bodytypes = BODYTYPE_DIGITIGRADE|BODYTYPE_TAUR_ALL
+	worn_template_bodytypes = BODYTYPE_TESHARI
+	greyscale_config_worn_template = /datum/greyscale_config/worn_template_hardsuit
+	worn_template_greyscale_color = "#AAAAAA"
 	var/obj/item/clothing/head/helmet/space/hardsuit/helmet
 	actions_types = list(/datum/action/item_action/toggle_spacesuit, /datum/action/item_action/toggle_helmet)
 	var/helmettype = /obj/item/clothing/head/helmet/space/hardsuit
