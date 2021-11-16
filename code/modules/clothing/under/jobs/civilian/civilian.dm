@@ -61,6 +61,7 @@
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	fitted = FEMALE_UNIFORM_TOP
 	fitted_bodytypes = NONE
+	greyscale_config_worn_template = /datum/greyscale_config/worn_template_jumpskirt
 
 /obj/item/clothing/under/rank/civilian/head_of_personnel
 	desc = "It's a jumpsuit worn by someone who works in the position of \"Head of Personnel\"."
