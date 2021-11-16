@@ -82,3 +82,43 @@
 	name = "Worn Template Shorts"
 	icon_file = 'icons/mob/clothing/templates/under/shorts.dmi'
 	json_config = 'code/datums/greyscale/json_configs/templates/shorts.json'
+
+/datum/greyscale_config/worn_template_backpack
+	name = "Worn Template Backpack"
+	icon_file = 'icons/mob/clothing/templates/back/backpack.dmi'
+	json_config = 'code/datums/greyscale/json_configs/templates/backpack.json'
+
+/datum/greyscale_config/worn_template_backpack_twotone
+	name = "Worn Template Backpack TwoTone"
+	icon_file = 'icons/mob/clothing/templates/back/backpack_twotone.dmi'
+	json_config = 'code/datums/greyscale/json_configs/templates/backpack_twotone.json'
+
+/datum/greyscale_config/worn_template_satchel
+	name = "Worn Template Satchel"
+	icon_file = 'icons/mob/clothing/templates/back/satchel.dmi'
+	json_config = 'code/datums/greyscale/json_configs/templates/satchel.json'
+
+/datum/greyscale_config/worn_template_satchel_twotone
+	name = "Worn Template Satchel TwoTone"
+	icon_file = 'icons/mob/clothing/templates/back/satchel_twotone.dmi'
+	json_config = 'code/datums/greyscale/json_configs/templates/satchel_twotone.json'
+
+/datum/greyscale_config/worn_template_duffel
+	name = "Worn Template Duffel"
+	icon_file = 'icons/mob/clothing/templates/back/duffel.dmi'
+	json_config = 'code/datums/greyscale/json_configs/templates/duffel.json'
+
+/datum/greyscale_config/worn_template_duffel_twotone
+	name = "Worn Template Duffel TwoTone"
+	icon_file = 'icons/mob/clothing/templates/back/duffel_twotone.dmi'
+	json_config = 'code/datums/greyscale/json_configs/templates/duffel_twotone.json'
+
+/datum/greyscale_config/worn_template_tank
+	name = "Worn Template Tank"
+	icon_file = 'icons/mob/clothing/templates/back/tank.dmi'
+	json_config = 'code/datums/greyscale/json_configs/templates/tank.json'
+
+/datum/greyscale_config/worn_template_jetpack
+	name = "Worn Template Jetpack"
+	icon_file = 'icons/mob/clothing/templates/back/jetpack.dmi'
+	json_config = 'code/datums/greyscale/json_configs/templates/jetpack.json'

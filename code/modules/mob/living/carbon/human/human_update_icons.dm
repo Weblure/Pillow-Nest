@@ -500,7 +500,7 @@ generate/load female uniform sprites matching all previously decided variables
 		chosen_worn_icon = (perc_bodytype & BODYTYPE_TAUR_ALL) ? large_worn_icon : worn_icon
 
 	//Find a valid icon file from variables+arguments
-	var/file2use = !isinhands ? (worn_icon ? chosen_worn_icon : default_icon_file) : default_icon_file
+	var/file2use = !isinhands ? (chosen_worn_icon ? chosen_worn_icon : default_icon_file) : default_icon_file
 
 	//Find a valid layer from variables+arguments
 	var/layer2use = alternate_worn_layer ? alternate_worn_layer : default_layer
