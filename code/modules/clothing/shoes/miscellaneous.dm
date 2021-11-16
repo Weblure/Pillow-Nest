@@ -76,6 +76,7 @@
 	can_be_bloody = FALSE
 	custom_price = PAYCHECK_EASY * 3
 	can_be_tied = FALSE
+	worn_template_greyscale_color = "#FFF700"
 
 /obj/item/clothing/shoes/galoshes/dry
 	name = "absorbent galoshes"

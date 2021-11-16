@@ -17,6 +17,7 @@
 	alt_covers_chest = TRUE
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
+	worn_template_greyscale_color = "#C12D30"
 
 /obj/item/clothing/under/rank/security/officer
 	name = "security jumpsuit"
