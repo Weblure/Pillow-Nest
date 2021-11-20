@@ -96,22 +96,22 @@
 /datum/greyscale_config/worn_template_satchel
 	name = "Worn Template Satchel"
 	icon_file = 'icons/mob/clothing/templates/back/satchel.dmi'
-	json_config = 'code/datums/greyscale/json_configs/templates/satchel.json'
+	json_config = 'code/datums/greyscale/json_configs/templates/backpack.json'
 
 /datum/greyscale_config/worn_template_satchel_twotone
 	name = "Worn Template Satchel TwoTone"
 	icon_file = 'icons/mob/clothing/templates/back/satchel_twotone.dmi'
-	json_config = 'code/datums/greyscale/json_configs/templates/satchel_twotone.json'
+	json_config = 'code/datums/greyscale/json_configs/templates/backpack_twotone.json'
 
 /datum/greyscale_config/worn_template_duffel
 	name = "Worn Template Duffel"
 	icon_file = 'icons/mob/clothing/templates/back/duffel.dmi'
-	json_config = 'code/datums/greyscale/json_configs/templates/duffel.json'
+	json_config = 'code/datums/greyscale/json_configs/templates/backpack.json'
 
 /datum/greyscale_config/worn_template_duffel_twotone
 	name = "Worn Template Duffel TwoTone"
 	icon_file = 'icons/mob/clothing/templates/back/duffel_twotone.dmi'
-	json_config = 'code/datums/greyscale/json_configs/templates/duffel_twotone.json'
+	json_config = 'code/datums/greyscale/json_configs/templates/backpack_twotone.json'
 
 /datum/greyscale_config/worn_template_tank
 	name = "Worn Template Tank"
