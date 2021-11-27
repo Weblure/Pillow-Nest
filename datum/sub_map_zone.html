@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;sub_map_zone - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/sub_map_zone.html#var">Var Details</a> - <a href="datum/sub_map_zone.html#proc">Proc Details</a></header>
+<main>
+<h1>sub_map_zone <aside>/<a href="datum.html">datum</a>/<a href="datum/sub_map_zone.html">sub_map_zone</a></aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L86">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 86"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/crosslinked">crosslinked</a></th><td>Neighboring sub map zones, associative by direction</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/down_linkage">down_linkage</a></th><td>Sub map zone that is below this one (multi-z)</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/high_x">high_x</a></th><td>The high X boundary of the sub-zone</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/high_y">high_y</a></th><td>The high Y boundary of the sub-zone</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/low_x">low_x</a></th><td>The low X boundary of the sub-zone</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/low_y">low_y</a></th><td>The low Y boundary of the sub-zone</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/mapping_margin">mapping_margin</a></th><td>Margin for dockers and ruins to avoid placing things</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/ore_nodes">ore_nodes</a></th><td>Content variables:
+A list of all ore nodes on this level</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/parent_level">parent_level</a></th><td>Z level which contains this sub map zone</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/reserved_margin">reserved_margin</a></th><td>The amount of margin we have reserved in turfs on all sides of the reservation</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/traits">traits</a></th><td>Traits of this sub map zone</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/up_linkage">up_linkage</a></th><td>Sub map zone that is above this one (multi-z)</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/x_distance">x_distance</a></th><td>Distance in the X axis of the sub-zone</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/y_distance">y_distance</a></th><td>Distance in the Y axis of the sub-zone</td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#var/z_value">z_value</a></th><td>Z value of the sub map zone, for easy access</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/sub_map_zone.html#proc/New">New</a></th><td>Should you want to do any advanced shanenigans, you can turn this into an argument and adjust unlink logic, and it'll work</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/crosslinked"><aside class="declaration">var </aside>crosslinked
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L111">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 111"/></a></h3>
+        <p>Neighboring sub map zones, associative by direction</p><h3 id="var/down_linkage"><aside class="declaration">var </aside>down_linkage
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/sub_map_zone.html">sub_map_zone</a></aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L109">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 109"/></a></h3>
+        <p>Sub map zone that is below this one (multi-z)</p><h3 id="var/high_x"><aside class="declaration">var </aside>high_x
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L97">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 97"/></a></h3>
+        <p>The high X boundary of the sub-zone</p><h3 id="var/high_y"><aside class="declaration">var </aside>high_y
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L99">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 99"/></a></h3>
+        <p>The high Y boundary of the sub-zone</p><h3 id="var/low_x"><aside class="declaration">var </aside>low_x
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L93">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 93"/></a></h3>
+        <p>The low X boundary of the sub-zone</p><h3 id="var/low_y"><aside class="declaration">var </aside>low_y
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L95">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 95"/></a></h3>
+        <p>The low Y boundary of the sub-zone</p><h3 id="var/mapping_margin"><aside class="declaration">var </aside>mapping_margin
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L117">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 117"/></a></h3>
+        <p>Margin for dockers and ruins to avoid placing things</p><h3 id="var/ore_nodes"><aside class="declaration">var </aside>ore_nodes
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L121">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 121"/></a></h3>
+        <p>Content variables:
+A list of all ore nodes on this level</p><h3 id="var/parent_level"><aside class="declaration">var </aside>parent_level
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/space_level.html">space_level</a></aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L91">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 91"/></a></h3>
+        <p>Z level which contains this sub map zone</p><h3 id="var/reserved_margin"><aside class="declaration">var </aside>reserved_margin
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L115">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 115"/></a></h3>
+        <p>The amount of margin we have reserved in turfs on all sides of the reservation</p><h3 id="var/traits"><aside class="declaration">var </aside>traits
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L113">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 113"/></a></h3>
+        <p>Traits of this sub map zone</p><h3 id="var/up_linkage"><aside class="declaration">var </aside>up_linkage
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/sub_map_zone.html">sub_map_zone</a></aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L107">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 107"/></a></h3>
+        <p>Sub map zone that is above this one (multi-z)</p><h3 id="var/x_distance"><aside class="declaration">var </aside>x_distance
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L101">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 101"/></a></h3>
+        <p>Distance in the X axis of the sub-zone</p><h3 id="var/y_distance"><aside class="declaration">var </aside>y_distance
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L103">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 103"/></a></h3>
+        <p>Distance in the Y axis of the sub-zone</p><h3 id="var/z_value"><aside class="declaration">var </aside>z_value
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L105">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 105"/></a></h3>
+        <p>Z value of the sub map zone, for easy access</p><h2 id="proc">Proc Details</h2><h3 id="proc/New">New<aside>(passed_name, /list/passed_traits, /<a href="datum.html">datum</a>/<a href="datum/map_zone.html">map_zone</a>/passed_map, lx, ly, hx, hy, passed_z) 
+        
+    
+            <a href="https://github.com/hrzntal/horizon/blob/4ecbfa3d702fd40a1a1c990f807ec19bef525847/code/datums/map_zones.dm#L392">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 392"/></a></aside>
+        </h3>
+        <p>Should you want to do any advanced shanenigans, you can turn this into an argument and adjust unlink logic, and it'll work</p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/hrzntal/horizon/tree/4ecbfa3d702fd40a1a1c990f807ec19bef525847">4ecbfa3</a>
+        (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.0</a></footer>
+</body>
+</html>
