@@ -2014,7 +2014,7 @@
 	set desc = "Allows you to stop holding onto things in no gravity."
 
 	if(stat != CONSCIOUS)
-		to_chat(usr, SPAN_WARNING("You can't set your temporary flavor text now..."))
+		to_chat(usr, SPAN_WARNING("You can't do that now..."))
 		return
 
 	hold_onto_things = !hold_onto_things
