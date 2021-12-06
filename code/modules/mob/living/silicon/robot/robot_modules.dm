@@ -135,7 +135,11 @@
 	R.update_module_innate()
 	RM.rebuild_modules()
 	R.radio.recalculateChannels()
-
+	//ALTBORGS
+	if(RM.dogborg)
+		R.dogborg = TRUE
+		RM.dogborg_equip()
+	//end
 	INVOKE_ASYNC(RM, .proc/do_transform_animation)
 	qdel(src)
 	return RM
@@ -252,6 +256,7 @@
 		/obj/item/stack/sheet/rglass/cyborg,
 		/obj/item/stack/rods/cyborg,
 		/obj/item/stack/tile/iron/base/cyborg,
+		/obj/item/borg/apparatus/engi,
 		/obj/item/stack/cable_coil)
 	radio_channels = list(RADIO_CHANNEL_ENGINEERING)
 	emag_modules = list(/obj/item/borg/stun)
