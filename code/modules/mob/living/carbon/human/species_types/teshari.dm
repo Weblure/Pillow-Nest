@@ -1,7 +1,8 @@
-/datum/species/teshari //small voxes
+/datum/species/teshari //space turkeys
 	name = "Avali"
 	id = "teshari"
 	default_color = "6060FF"
+	say_mod = "chirps"
 	eyes_icon = 'icons/mob/species/teshari_eyes.dmi'
 	species_traits = list(
 		MUTCOLORS, 
@@ -20,10 +21,13 @@
 		"ears" = ACC_RANDOM,
 		"wings" = ACC_RANDOM
 	)
+	has_innate_wings = TRUE
+	wings_icons = list("low_wings", "low_wings_tri")
 	disliked_food = GROSS | GRAIN
-	liked_food = MEAT
+	liked_food = MEAT | RAW
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	attack_verb = "slash"
+	attack_effect = ATTACK_EFFECT_CLAW
 	attack_sound = 'sound/weapons/slash.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'
 	limbs_icon = 'icons/mob/species/teshari_parts_greyscale.dmi'
@@ -45,14 +49,14 @@
 	heatmod = 1.5
 	brutemod = 1.5
 	burnmod = 1.5 // They take more damage from practically everything
-	punchdamagelow = 5 // fuck you they have talons
+	punchdamagelow = 5 // fuck you they're carnivores with talons
 	punchdamagehigh = 6
 	bodytemp_normal = BODYTEMP_NORMAL - 50
 	bodytemp_heat_damage_limit = BODYTEMP_HEAT_DAMAGE_LIMIT - 50
 	bodytemp_cold_damage_limit = BODYTEMP_COLD_DAMAGE_LIMIT - 50
 	species_language_holder = /datum/language_holder/teshari
 	learnable_languages = list(/datum/language/common, /datum/language/schechi)
-	body_size_restricted = TRUE
+	body_size_restricted = FALSE //What have I done
 	bodytype = BODYTYPE_TESHARI
 	flavor_text = "A race of feathered raptors who developed alongside the Skrell, inhabiting \
 	the polar tundral regions outside of Skrell territory. Extremely fragile, they developed \

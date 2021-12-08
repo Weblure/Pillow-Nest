@@ -16,6 +16,21 @@
 	name = "None"
 	icon_state = "none"
 	factual = FALSE
+/datum/sprite_accessory/wings/low_wings
+	icon = 'icons/mob/sprite_accessory/wings.dmi'
+	name = "Low wings"
+	icon_state = "low"
+	dimension_x = 46
+	dimension_y = 34
+	center = TRUE
+
+/datum/sprite_accessory/wings/low_wings_top
+	icon = 'icons/mob/sprite_accessory/wings.dmi'
+	name = "Low wings (Top)"
+	icon_state = "low_top"
+	dimension_x = 46
+	dimension_y = 34
+	center = TRUE
 
 /datum/sprite_accessory/wings/low_wings_tri
 	icon = 'icons/mob/sprite_accessory/wings.dmi'
