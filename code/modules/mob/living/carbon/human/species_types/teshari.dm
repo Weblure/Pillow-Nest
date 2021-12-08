@@ -17,7 +17,8 @@
 	)
 	default_mutant_bodyparts = list(
 		"tail" = ACC_RANDOM,
-		"ears" = ACC_RANDOM
+		"ears" = ACC_RANDOM,
+		"wings" = ACC_RANDOM
 	)
 	disliked_food = GROSS | GRAIN
 	liked_food = MEAT
@@ -44,7 +45,7 @@
 	heatmod = 1.5
 	brutemod = 1.5
 	burnmod = 1.5 // They take more damage from practically everything
-	punchdamagelow = 2 // Lower bound punch damage
+	punchdamagelow = 5 // fuck you they have talons
 	punchdamagehigh = 6
 	bodytemp_normal = BODYTEMP_NORMAL - 50
 	bodytemp_heat_damage_limit = BODYTEMP_HEAT_DAMAGE_LIMIT - 50
