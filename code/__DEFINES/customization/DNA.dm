@@ -69,7 +69,8 @@
 #define SHEATH_NONE			"None"
 #define SHEATH_NORMAL		"Sheath"
 #define SHEATH_SLIT			"Slit"
-#define SHEATH_MODES list(SHEATH_NONE, SHEATH_NORMAL, SHEATH_SLIT)
+#define SHEATH_CLOACA			"Cloaca"
+#define SHEATH_MODES list(SHEATH_NONE, SHEATH_NORMAL, SHEATH_SLIT, SHEATH_CLOACA)
 
 #define MANDATORY_FEATURE_LIST list("mcolor" = "FFFFBB","mcolor2" = "FFFFBB","mcolor3" = "FFFFBB","ethcolor" = "FCC","skin_color" = "FED","flavor_text" = "","breasts_size" = 1,"breasts_lactation" = FALSE,"penis_size" = 13,"penis_girth" = 9,"penis_taur_mode" = TRUE,"penis_sheath" = SHEATH_NONE ,"balls_size" = 1, "body_size" = BODY_SIZE_NORMAL, "custom_species" = null, "uses_skintones" = FALSE)
 

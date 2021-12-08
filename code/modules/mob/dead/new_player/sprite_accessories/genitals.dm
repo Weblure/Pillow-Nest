@@ -87,6 +87,10 @@
 	icon_state = "flared"
 	name = "Flared"
 
+/datum/sprite_accessory/genital/penis/barb
+	icon_state = "barb"
+	name = "Barbed"
+
 /datum/sprite_accessory/genital/penis/barbknot
 	icon_state = "barbknot"
 	name = "Barbed, Knotted"
@@ -221,6 +225,10 @@
 /datum/sprite_accessory/genital/vagina/gaping
 	icon_state = "gaping"
 	name = "Gaping"
+
+/datum/sprite_accessory/genital/vagina/cloaca
+	icon_state = "cloaca"
+	name = "Cloaca"
 
 /datum/sprite_accessory/genital/breasts
 	icon = 'icons/mob/sprite_accessory/genitals/breasts_onmob.dmi'

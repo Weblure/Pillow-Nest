@@ -71,7 +71,9 @@
 			if(SHEATH_NORMAL)
 				returned_string = "You see a sheath."
 			if(SHEATH_SLIT)
-				returned_string = "You see genital slit."
+				returned_string = "You see a genital slit."
+			if(SHEATH_CLOACA)
+				returned_string = "You see a cloaca."
 		if(aroused == AROUSAL_PARTIAL)
 			returned_string += " There's a [pname] penis poking out of it."
 	else
@@ -184,6 +186,8 @@
 
 /obj/item/organ/genital/vagina/get_description_string(datum/sprite_accessory/genital/gas)
 	var/returned_string = "You see a [lowertext(genital_name)] vagina."
+	if(lowertext(genital_name) == "cloaca")
+		returned_string = "You see a cloaca." //i deserve a pipebomb for this
 	switch(aroused)
 		if(AROUSAL_NONE)
 			returned_string += " It seems dry."
