@@ -21,8 +21,6 @@
 		"ears" = ACC_RANDOM,
 		"wings" = ACC_RANDOM
 	)
-	has_innate_wings = TRUE
-	wings_icons = list("low_wings", "low_wings_tri")
 	disliked_food = GROSS | GRAIN
 	liked_food = MEAT | RAW
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
@@ -56,7 +54,7 @@
 	bodytemp_cold_damage_limit = BODYTEMP_COLD_DAMAGE_LIMIT - 50
 	species_language_holder = /datum/language_holder/teshari
 	learnable_languages = list(/datum/language/common, /datum/language/schechi)
-	body_size_restricted = FALSE //What have I done
+	body_size_restricted = TRUE
 	bodytype = BODYTYPE_TESHARI
 	flavor_text = "A race of feathered raptors who developed alongside the Skrell, inhabiting \
 	the polar tundral regions outside of Skrell territory. Extremely fragile, they developed \

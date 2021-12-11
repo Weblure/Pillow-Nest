@@ -16,57 +16,6 @@
 	name = "None"
 	icon_state = "none"
 	factual = FALSE
-/datum/sprite_accessory/wings/low_wings
-	icon = 'icons/mob/sprite_accessory/wings.dmi'
-	name = "Low wings"
-	icon_state = "low"
-	dimension_x = 46
-	dimension_y = 34
-	center = TRUE
-
-/datum/sprite_accessory/wings/low_wings_top
-	icon = 'icons/mob/sprite_accessory/wings.dmi'
-	name = "Low wings (Top)"
-	icon_state = "low_top"
-	dimension_x = 46
-	dimension_y = 34
-	center = TRUE
-
-/datum/sprite_accessory/wings/low_wings_tri
-	icon = 'icons/mob/sprite_accessory/wings.dmi'
-	name = "Low wings tri-tone"
-	icon_state = "low_tri"
-	color_src = USE_MATRIXED_COLORS
-	dimension_x = 46
-	dimension_y = 34
-	center = TRUE
-
-/datum/sprite_accessory/wings/low_wings_tri_top
-	icon = 'icons/mob/sprite_accessory/wings.dmi'
-	name = "Low wings tri-tone (top)"
-	icon_state = "low_tri_top"
-	color_src = USE_MATRIXED_COLORS
-	dimension_x = 46
-	dimension_y = 34
-	center = TRUE
-
-/datum/sprite_accessory/wings/low_wings_jewel
-	icon = 'icons/mob/sprite_accessory/wings.dmi'
-	name = "Low wings jeweled"
-	icon_state = "low_jewel"
-	color_src = USE_MATRIXED_COLORS
-	dimension_x = 46
-	dimension_y = 34
-	center = TRUE
-
-/datum/sprite_accessory/wings/low_wings_jewel_top
-	icon = 'icons/mob/sprite_accessory/wings.dmi'
-	name = "Low wings jeweled (top)"
-	icon_state = "low_jewel_top"
-	color_src = USE_MATRIXED_COLORS
-	dimension_x = 46
-	dimension_y = 34
-	center = TRUE
 
 /datum/sprite_accessory/wings/angel
 	name = "Angel"
@@ -209,6 +158,53 @@
 /datum/sprite_accessory/wings/mammal/bee
 	name = "Bee"
 	icon_state = "bee"
+
+/datum/sprite_accessory/wings/mutant/none
+	name = "None"
+	icon_state = "none"
+	color_src = null
+	factual = FALSE
+
+/datum/sprite_accessory/wings/mutant/teshari
+	icon = 'icons/mob/sprite_accessory/wings.dmi'
+	generic = "Wings"
+	key = "wings"
+	color_src = USE_ONE_COLOR
+	recommended_species = list("teshari")
+	bodytypes = BODYTYPE_TESHARI
+	organ_type = /obj/item/organ/wings
+	relevent_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER, BODY_ADJ_LAYER)
+	dimension_x = 46
+	dimension_y = 34
+	center = TRUE
+
+/datum/sprite_accessory/wings/mutant/teshari/low_wings
+	name = "Low wings"
+	icon_state = "low"
+
+/datum/sprite_accessory/wings/mutant/teshari/low_wings_top
+	name = "Low wings (Top)"
+	icon_state = "low_top"
+
+/datum/sprite_accessory/wings/mutant/teshari/low_wings_tri
+	name = "Low wings tri-tone"
+	icon_state = "low_tri"
+	color_src = USE_MATRIXED_COLORS
+
+/datum/sprite_accessory/wings/mutant/teshari/low_wings_tri_top
+	name = "Low wings tri-tone (Top)"
+	icon_state = "low_tri_top"
+	color_src = USE_MATRIXED_COLORS
+
+/datum/sprite_accessory/wings/mutant/teshari/low_wings_jewel
+	name = "Low wings jeweled"
+	icon_state = "low_jewel"
+	color_src = USE_MATRIXED_COLORS
+
+/datum/sprite_accessory/wings/mutant/teshari/low_wings_jewel_top
+	name = "Low wings jeweled (Top)"
+	icon_state = "low_jewel_top"
+	color_src = USE_MATRIXED_COLORS
 
 /datum/sprite_accessory/wings/skeleton
 	name = "Skeleton"

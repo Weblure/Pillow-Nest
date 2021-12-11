@@ -99,6 +99,11 @@
 	icon_state = "tapered"
 	name = "Tapered"
 
+/datum/sprite_accessory/genital/penis/teshtapered
+	icon_state = "teshtapered"
+	name = "Tapered Teshari"
+	bodytypes = BODYTYPE_TESHARI
+
 /datum/sprite_accessory/genital/penis/tentacle
 	icon_state = "tentacle"
 	name = "Tentacled"
@@ -229,6 +234,11 @@
 /datum/sprite_accessory/genital/vagina/cloaca
 	icon_state = "cloaca"
 	name = "Cloaca"
+
+/datum/sprite_accessory/genital/vagina/cloacatesh
+	icon_state = "teshcloaca"
+	name = "Teshari Cloaca"
+	bodytypes = BODYTYPE_TESHARI
 
 /datum/sprite_accessory/genital/breasts
 	icon = 'icons/mob/sprite_accessory/genitals/breasts_onmob.dmi'
