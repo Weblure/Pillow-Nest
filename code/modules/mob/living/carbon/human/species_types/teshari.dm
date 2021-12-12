@@ -1,7 +1,8 @@
-/datum/species/teshari //small voxes
+/datum/species/teshari //space turkeys
 	name = "Avali"
 	id = "teshari"
 	default_color = "6060FF"
+	say_mod = "chirps"
 	eyes_icon = 'icons/mob/species/teshari_eyes.dmi'
 	species_traits = list(
 		MUTCOLORS, 
@@ -17,12 +18,14 @@
 	)
 	default_mutant_bodyparts = list(
 		"tail" = ACC_RANDOM,
-		"ears" = ACC_RANDOM
+		"ears" = ACC_RANDOM,
+		"wings" = ACC_RANDOM
 	)
 	disliked_food = GROSS | GRAIN
-	liked_food = MEAT
+	liked_food = MEAT | RAW
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	attack_verb = "slash"
+	attack_effect = ATTACK_EFFECT_CLAW
 	attack_sound = 'sound/weapons/slash.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'
 	limbs_icon = 'icons/mob/species/teshari_parts_greyscale.dmi'
@@ -44,7 +47,7 @@
 	heatmod = 1.5
 	brutemod = 1.5
 	burnmod = 1.5 // They take more damage from practically everything
-	punchdamagelow = 2 // Lower bound punch damage
+	punchdamagelow = 5 // fuck you they're carnivores with talons
 	punchdamagehigh = 6
 	bodytemp_normal = BODYTEMP_NORMAL - 50
 	bodytemp_heat_damage_limit = BODYTEMP_HEAT_DAMAGE_LIMIT - 50
